@@ -1,0 +1,42 @@
+.all-cta-container{
+    padding: 30px;
+}
+.cta-container{
+    background: var(--gradient-text);
+  color: transparent;
+  padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cta-container_first-part p{
+    color: black;
+}
+.cta-container_first-part > p:nth-child(1){
+    font-size: 12px;
+}
+.cta-container_first-part > p:nth-child(2){
+    font-size: 24px;
+    font-weight: 600;
+}
+.cta-container_second-part button{
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+}
+
+@media screen and (max-width:800px) {
+    .cta-container{
+        background: var(--gradient-text);
+      color: transparent;
+      padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}

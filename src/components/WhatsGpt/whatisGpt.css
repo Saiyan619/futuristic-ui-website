@@ -1,0 +1,91 @@
+.WhatIsGpt-container{
+     /* background: var(--color-footer); */
+     padding: 25px;
+   
+}
+
+.padding-container{
+    padding: 30px;
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.padding-container p{
+    color: var(--subtext-color);
+}
+
+.WhatIsGpt-container-sub-container-1{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.WhatIsGpt-container-sub-container-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+h2{
+    font-size: 34px;
+    background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+.WhatIsGpt-container-sub-container-2  span{
+    background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  font-size: 16px;
+  
+}
+
+.WhatIsGpt-container-sub-container-3{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media screen and (min-width:1200px) {
+    .WhatIsGpt-container-sub-container-1{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+     }
+
+     .WhatIsGpt-sub_sub-container1-first-part{
+        width: 30%;
+     }
+     .WhatIsGpt-sub_sub-container1-second-part{
+        width: 70%;
+     }
+
+     .WhatIsGpt-container-sub-container-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-top: 70px;
+    }
+
+    .WhatIsGpt-container-sub-container-3{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 90px;
+        /* gap: 20px; */
+    }
+
+    .WhatIsGpt-container-sub-container-3 p{
+        margin-top: 30px;
+    }
+}

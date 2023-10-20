@@ -1,0 +1,92 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0px;
+    width: 100%;
+    position: relative;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 40px 20px;
+    margin: auto;
+    background-color: var(--all-bg-color);
+  }
+
+.sub-navbar1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.unordered-list{
+    display: flex;
+    gap: 15px;
+}
+.unordered-list > li{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.sub_sub-navBar2{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.sign-up{
+    background-color: var(--btn-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-option{
+    font-size: 25px;
+    display: none;
+}
+
+
+@media screen and (max-width: 800px){
+
+    .list-container{
+        position: absolute;
+        background-color: var(--sub-color);
+        scale: 0;
+        top: 70px;
+        right: 40px;
+        padding: 15px;
+        transition: .5s;
+    }.list-container_active{
+        position: absolute;
+        background-color: var(--sub-color);
+        scale: 1;
+        top: 90px;
+        right: 40px;
+        padding: 15px;
+        transition: .5s;
+    }
+    .unordered-list{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        text-align: right;
+    }
+    
+    .sub_sub-navBar2{
+        display: none;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .close-option{
+        font-size: 25px;
+        display: block;
+    }
+}
